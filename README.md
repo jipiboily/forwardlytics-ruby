@@ -1,6 +1,15 @@
 # Forwardlytics: the Ruby client
 
+<p align="center">
+  <img src="https://s3.amazonaws.com/forwardlytics-assets/logo-color.svg">
+</p>
+
 Sends stuff to [Forwardlytics](https://github.com/jipiboily/forwardlytics).
+
+Where are we at? What needs to be done and what's in the pipeline? See [Forawrdlytics on waffle.io][forwardlytics-ruby-on-waffle]
+
+[![Build Status](https://travis-ci.org/jipiboily/forwardlytics-ruby.svg?branch=master)](https://travis-ci.org/jipiboily/forwardlytics-ruby)
+[![Stories in Progress](https://badge.waffle.io/jipiboily/forwardlytics-ruby.svg?label=In%20Progress&title=In%20Progress)](http://waffle.io/jipiboily/forwardlytics-ruby)
 
 ## Installation
 
@@ -73,3 +82,5 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/jipibo
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+[forwardlytics-ruby-on-waffle]: https://waffle.io/jipiboily/forwardlytics-ruby
