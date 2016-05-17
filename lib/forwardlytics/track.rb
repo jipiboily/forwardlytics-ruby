@@ -6,6 +6,7 @@ module Forwardlytics
       properties: properties,
       timestamp: Time.now().to_i
     }
-    post('/track', params)
+
+    t = Thread.new { post('/track', params) }
   end
 end

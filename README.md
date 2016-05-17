@@ -41,6 +41,17 @@ FORWARDLYTICS_API_KEY=123ma
 FORWARDLYTICS_URL=http://localhost:3000
 ```
 
+### Exception handler
+
+Forwardlytics will do its work in threads, so if any exception is raised, it will be silent. We don't want that, so we made an exception handler. Here is how you could configure it in your project:
+
+```ruby
+Forwardlytics.exception_handler = -> (ex) {
+  puts "Exception in Forwardlytics caught by exception_handler: #{ex}"
+  Bugsnag.notify(ex)
+}
+```
+
 ### Dispatch events and identifications
 
 For user identification:

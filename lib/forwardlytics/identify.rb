@@ -5,6 +5,7 @@ module Forwardlytics
       userTraits: traits,
       timestamp: Time.now().to_i
     }
-    post('/identify', params)
+
+    t = Thread.new { post('/identify', params) }
   end
 end
