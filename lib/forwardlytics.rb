@@ -27,7 +27,7 @@ module Forwardlytics
       when Net::HTTPSuccess, Net::HTTPRedirection
         # OK
       else
-        raise NetException, "Potential problem posting to Forwardlytics (#{full_url})"
+        raise NetException, "Potential problem posting to Forwardlytics (#{full_url}) - #{res.inspect} - #{res.code} - #{res.body}"
       end
     rescue Exception => ex
       exception_handler(ex)
